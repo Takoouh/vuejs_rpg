@@ -1,0 +1,58 @@
+#board{
+    display: flex;
+    height:100vh
+}
+
+.logs{
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(0,0,0,0.6);
+    width:500px;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logs p{
+    color: white;
+}
+
+.logs-enter-active, .logs-leave-active {
+transition: all 1s;
+}
+.logs-enter, .logs-leave-to /* .logs-leave-active below version 2.1.8 */ {
+opacity: 0;
+transform: translatex(30px);
+}
+
+.stats{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.unit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow:1;
+}
+
+.player{
+    background: #1b95e0;
+}
+
+.enemy{
+    background: #e81c1c;
+
+
+}
+
+.unit_frame img{
+    width: 250px;
+    height: 250px;
+}
